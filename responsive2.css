@@ -1,0 +1,183 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+/* Styles */
+}
+/**********
+iPad 3
+**********/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+	#header_img{
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.portada{
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+	.description_port{
+		width: 60%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: -6%;
+	}
+	.text {
+	    width: 100%;
+	    display: inline-block;
+	    background-color: #ffd900;
+	    margin: 2em;
+	    margin-top: 10%;
+	    border-radius: 25px;
+	}
+	#descript {
+	    float: right;
+	    text-align: left;
+	    width: 100%;
+	    margin-top: 1em;
+	    margin-bottom: 1em;
+	}
+	#t1 {
+	    font-size: 4em;
+	    color: #f80055;
+	    text-align: center;
+	}
+	#t2 {
+	    font-size: 2.5em;
+	    color: #f80055;
+	    text-align: center;
+	}
+	#t22 {
+	    font-size: 2.5em;
+	    color: #f80055;
+	    text-align: center;
+	}
+	#t3 {
+	    font-size: 4em;
+	    color: #f80055;
+	    text-align: center;
+	}
+}
+/* Desktops and laptops ----------- */
+@media (min-width: 1601px){
+	.background_logo {
+	    background-color: #ffd900;
+	    text-align: center;
+	    padding: 0;
+	    border-radius: 15px;
+	    margin-top: 1em;
+	    width: 130%;
+	}
+	.form {
+	    position: absolute;
+	    top: 0px;
+	    right: 0px;
+	    height: 70%;
+	    width: calc(30% - 20px);
+	    border-left: 2px solid #ffffff;
+	    padding: 0px 10px;
+	    flex-direction: column;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    transition: 1s;
+	    background-color: #ff0062;
+	    margin-top: 8%;
+	}
+}
+@media only screen  and (min-width : 1224px) and (max-width: 1600px) {
+	.general ,.headerlo{
+		display: block;
+	}
+	.general2{
+		display: none;
+	}
+
+	.parrafoform {
+	    width: 100%;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    margin: 0;
+	    padding: 7px;
+	    margin-bottom: 25px;
+	    color: white;
+	    text-align: center;
+	    font-size: 1em;
+	    transition: 1s;
+	}
+	.btnact {
+		width: 60%;
+		margin-top: 13%;
+	}
+	.form form input {
+	    background: white;
+	    width: calc(100% - 20px);
+	    padding: 10px;
+	    margin: 5px;
+	    border: 1px solid #ccc;
+	    border-radius: 15px;
+	    font-size: 0.7em;
+	}
+	button {
+	    background: #691da4;
+	    border: 0px;
+	    padding: 12px;
+	    color: white;
+	    width: 30%;
+	    margin-top: 10px;
+	    border-radius: 15px;
+	    text-align: center;
+	    margin-left: auto;
+	    float: right;
+	    font-size: 1em;
+	    height: fit-content;
+	
+	}
+	#t1 {
+		font-size: 1.2em;
+		color: #f80055;
+	}
+	#t3 {
+	    color: #f80055;
+	    font-size: 0.8em;
+	}
+	#img_logo {
+	    width: 48%;
+	    float: left;
+	    text-align: center;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+}

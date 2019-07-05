@@ -1,0 +1,120 @@
+[10-May-2018 19:56:51 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1318 Incorrect number of arguments for PROCEDURE codeguat_heineken-form.sp_saveCode; expected 4, got 7 in /home2/codeguat/public_html/finalheineken/server/core/db.php:39
+Stack trace:
+#0 /home2/codeguat/public_html/finalheineken/server/core/db.php(39): PDOStatement->execute(Array)
+#1 /home2/codeguat/public_html/finalheineken/server/functions.php(44): callsp('sp_saveCode', Array, Array)
+#2 {main}
+  thrown in /home2/codeguat/public_html/finalheineken/server/core/db.php on line 39
+[10-May-2018 23:37:42 America/Chicago] PHP Warning:  require(core/rb-mysql.php): failed to open stream: No such file or directory in /home2/codeguat/public_html/finalheineken/server/code-verify.php on line 3
+[10-May-2018 23:37:42 America/Chicago] PHP Warning:  require(core/rb-mysql.php): failed to open stream: No such file or directory in /home2/codeguat/public_html/finalheineken/server/code-verify.php on line 3
+[10-May-2018 23:37:42 America/Chicago] PHP Fatal error:  require(): Failed opening required 'core/rb-mysql.php' (include_path='.:/opt/php70/lib/php') in /home2/codeguat/public_html/finalheineken/server/code-verify.php on line 3
+[10-May-2018 23:38:56 America/Chicago] PHP Warning:  require(core/rb-mysql.php): failed to open stream: No such file or directory in /home2/codeguat/public_html/finalheineken/server/code-verify.php on line 3
+[10-May-2018 23:38:56 America/Chicago] PHP Warning:  require(core/rb-mysql.php): failed to open stream: No such file or directory in /home2/codeguat/public_html/finalheineken/server/code-verify.php on line 3
+[10-May-2018 23:38:56 America/Chicago] PHP Fatal error:  require(): Failed opening required 'core/rb-mysql.php' (include_path='.:/opt/php70/lib/php') in /home2/codeguat/public_html/finalheineken/server/code-verify.php on line 3
+[10-May-2018 23:45:41 America/Chicago] PHP Warning:  Attempt to assign property of non-object in /home2/codeguat/public_html/finalheineken/server/code-verify.php on line 10
+[10-May-2018 23:45:41 America/Chicago] PHP Fatal error:  Uncaught RedBeanPHP\RedException: OODB Store requires a bean, got: array in /home2/codeguat/public_html/finalheineken/server/core/rb-mysql.php:8221
+Stack trace:
+#0 /home2/codeguat/public_html/finalheineken/server/core/rb-mysql.php(8489): RedBeanPHP\OODB->unboxIfNeeded(Array)
+#1 /home2/codeguat/public_html/finalheineken/server/core/rb-mysql.php(11028): RedBeanPHP\OODB->store(Array)
+#2 /home2/codeguat/public_html/finalheineken/server/code-verify.php(11): RedBeanPHP\Facade::store(Array)
+#3 {main}
+  thrown in /home2/codeguat/public_html/finalheineken/server/core/rb-mysql.php on line 8221
+[10-May-2018 23:46:35 America/Chicago] PHP Fatal error:  Uncaught RedBeanPHP\RedException: OODB Store requires a bean, got: array in /home2/codeguat/public_html/finalheineken/server/core/rb-mysql.php:8221
+Stack trace:
+#0 /home2/codeguat/public_html/finalheineken/server/core/rb-mysql.php(8489): RedBeanPHP\OODB->unboxIfNeeded(Array)
+#1 /home2/codeguat/public_html/finalheineken/server/core/rb-mysql.php(11028): RedBeanPHP\OODB->store(Array)
+#2 /home2/codeguat/public_html/finalheineken/server/code-verify.php(11): RedBeanPHP\Facade::store(Array)
+#3 {main}
+  thrown in /home2/codeguat/public_html/finalheineken/server/core/rb-mysql.php on line 8221
+[11-May-2018 00:00:40 America/Chicago] PHP Fatal error:  Uncaught RedBeanPHP\RedException: OODB Store requires a bean, got: array in /home2/codeguat/public_html/finalheineken/server/core/rb-mysql.php:8221
+Stack trace:
+#0 /home2/codeguat/public_html/finalheineken/server/core/rb-mysql.php(8489): RedBeanPHP\OODB->unboxIfNeeded(Array)
+#1 /home2/codeguat/public_html/finalheineken/server/core/rb-mysql.php(11028): RedBeanPHP\OODB->store(Array)
+#2 /home2/codeguat/public_html/finalheineken/server/code-verify.php(11): RedBeanPHP\Facade::store(Array)
+#3 {main}
+  thrown in /home2/codeguat/public_html/finalheineken/server/core/rb-mysql.php on line 8221
+[11-May-2018 00:00:59 America/Chicago] PHP Fatal error:  Uncaught [42S22] - SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'field list'
+trace: #0 /home2/codeguat/public_html/finalheineken/server/core/rb-mysql.php(1035): RedBeanPHP\Driver\RPDO->runQuery('INSERT INTO `us...', Array)
+#1 /home2/codeguat/public_html/finalheineken/server/core/rb-mysql.php(1072): RedBeanPHP\Driver\RPDO->GetAll('INSERT INTO `us...', Array)
+#2 /home2/codeguat/public_html/finalheineken/server/core/rb-mysql.php(4246): RedBeanPHP\Driver\RPDO->GetOne('INSERT INTO `us...', Array)
+#3 /home2/codeguat/public_html/finalheineken/server/core/rb-mysql.php(5762): RedBeanPHP\Adapter\DBAdapter->getCell('INSERT INTO `us...', Array, 0)
+#4 /home2/codeguat/public_html/finalheineken/server/core/rb-mysql.php(5889): RedBeanPHP\QueryWriter\AQueryWriter->insertRecord('usuario', Array, Array)
+#5 /home2/codeguat/public_html/finalheineken/server/core/rb-mysql.php(7983): RedBeanPHP\QueryWriter\AQueryWriter->updateRecord('usuario', Array, NULL)
+#6 /home2/codeguat/public_html/finalheineken/server/core/rb in /home2/codeguat/public_html/finalheineken/server/core/rb-mysql.php on line 768
+[18-May-2018 11:57:05 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error in /home2/codeguat/public_html/finalheineken/server/core/db.php:40
+Stack trace:
+#0 /home2/codeguat/public_html/finalheineken/server/core/db.php(40): PDOStatement->fetchAll(2)
+#1 /home2/codeguat/public_html/finalheineken/server/functions.php(20): callsp('sp_getCode', Array, Array)
+#2 {main}
+  thrown in /home2/codeguat/public_html/finalheineken/server/core/db.php on line 40
+[18-May-2018 11:57:43 America/Chicago] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error in /home2/codeguat/public_html/finalheineken/server/core/db.php:40
+Stack trace:
+#0 /home2/codeguat/public_html/finalheineken/server/core/db.php(40): PDOStatement->fetchAll(2)
+#1 /home2/codeguat/public_html/finalheineken/server/functions.php(20): callsp('sp_getCode', Array, Array)
+#2 {main}
+  thrown in /home2/codeguat/public_html/finalheineken/server/core/db.php on line 40
+[25-May-2018 13:44:37 America/Guatemala] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error in /home2/codeguat/public_html/finalheineken/server/core/db.php:40
+Stack trace:
+#0 /home2/codeguat/public_html/finalheineken/server/core/db.php(40): PDOStatement->fetchAll(2)
+#1 /home2/codeguat/public_html/finalheineken/server/functions.php(20): callsp('sp_getCode', Array, Array)
+#2 {main}
+  thrown in /home2/codeguat/public_html/finalheineken/server/core/db.php on line 40
+[25-May-2018 13:52:17 America/Guatemala] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error in /home2/codeguat/public_html/finalheineken/server/core/db.php:40
+Stack trace:
+#0 /home2/codeguat/public_html/finalheineken/server/core/db.php(40): PDOStatement->fetchAll(2)
+#1 /home2/codeguat/public_html/finalheineken/server/functions.php(20): callsp('sp_getCode', Array, Array)
+#2 {main}
+  thrown in /home2/codeguat/public_html/finalheineken/server/core/db.php on line 40
+[25-May-2018 15:06:27 America/Guatemala] PHP Fatal error:  Uncaught Error: Call to a member function export() on boolean in /home2/codeguat/public_html/finalheineken/server/code-verify.php:19
+Stack trace:
+#0 {main}
+  thrown in /home2/codeguat/public_html/finalheineken/server/code-verify.php on line 19
+[25-May-2018 15:06:33 America/Guatemala] PHP Fatal error:  Uncaught Error: Call to a member function export() on boolean in /home2/codeguat/public_html/finalheineken/server/code-verify.php:19
+Stack trace:
+#0 {main}
+  thrown in /home2/codeguat/public_html/finalheineken/server/code-verify.php on line 19
+[25-May-2018 15:06:36 America/Guatemala] PHP Fatal error:  Uncaught Error: Call to a member function export() on boolean in /home2/codeguat/public_html/finalheineken/server/code-verify.php:27
+Stack trace:
+#0 {main}
+  thrown in /home2/codeguat/public_html/finalheineken/server/code-verify.php on line 27
+[25-May-2018 15:07:10 America/Guatemala] PHP Fatal error:  Uncaught Error: Call to a member function export() on boolean in /home2/codeguat/public_html/finalheineken/server/code-verify.php:19
+Stack trace:
+#0 {main}
+  thrown in /home2/codeguat/public_html/finalheineken/server/code-verify.php on line 19
+[25-May-2018 15:07:11 America/Guatemala] PHP Fatal error:  Uncaught Error: Call to a member function export() on boolean in /home2/codeguat/public_html/finalheineken/server/code-verify.php:19
+Stack trace:
+#0 {main}
+  thrown in /home2/codeguat/public_html/finalheineken/server/code-verify.php on line 19
+[25-May-2018 15:07:17 America/Guatemala] PHP Fatal error:  Uncaught Error: Call to a member function export() on boolean in /home2/codeguat/public_html/finalheineken/server/code-verify.php:19
+Stack trace:
+#0 {main}
+  thrown in /home2/codeguat/public_html/finalheineken/server/code-verify.php on line 19
+[25-May-2018 15:07:19 America/Guatemala] PHP Fatal error:  Uncaught Error: Call to a member function export() on boolean in /home2/codeguat/public_html/finalheineken/server/code-verify.php:27
+Stack trace:
+#0 {main}
+  thrown in /home2/codeguat/public_html/finalheineken/server/code-verify.php on line 27
+[25-May-2018 19:29:23 America/Guatemala] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error in /home2/codeguat/public_html/finalheineken/server/core/db.php:40
+Stack trace:
+#0 /home2/codeguat/public_html/finalheineken/server/core/db.php(40): PDOStatement->fetchAll(2)
+#1 /home2/codeguat/public_html/finalheineken/server/functions.php(20): callsp('sp_getCode', Array, Array)
+#2 {main}
+  thrown in /home2/codeguat/public_html/finalheineken/server/core/db.php on line 40
+[26-May-2018 11:28:53 America/Guatemala] PHP Fatal error:  Uncaught Error: Call to a member function export() on boolean in /home2/codeguat/public_html/finalheineken/server/code-verify.php:19
+Stack trace:
+#0 {main}
+  thrown in /home2/codeguat/public_html/finalheineken/server/code-verify.php on line 19
+[26-May-2018 11:29:16 America/Guatemala] PHP Fatal error:  Uncaught Error: Call to a member function export() on boolean in /home2/codeguat/public_html/finalheineken/server/code-verify.php:19
+Stack trace:
+#0 {main}
+  thrown in /home2/codeguat/public_html/finalheineken/server/code-verify.php on line 19
+[26-May-2018 11:31:23 America/Guatemala] PHP Fatal error:  Uncaught Error: Call to a member function export() on boolean in /home2/codeguat/public_html/finalheineken/server/code-verify.php:19
+Stack trace:
+#0 {main}
+  thrown in /home2/codeguat/public_html/finalheineken/server/code-verify.php on line 19
+[26-May-2018 11:31:28 America/Guatemala] PHP Fatal error:  Uncaught Error: Call to a member function export() on boolean in /home2/codeguat/public_html/finalheineken/server/code-verify.php:27
+Stack trace:
+#0 {main}
+  thrown in /home2/codeguat/public_html/finalheineken/server/code-verify.php on line 27
+[30-May-2018 21:13:08 America/Guatemala] PHP Fatal error:  Uncaught Error: Call to a member function export() on boolean in /home2/codeguat/public_html/finalheineken/server/code-verify.php:19
+Stack trace:
+#0 {main}
+  thrown in /home2/codeguat/public_html/finalheineken/server/code-verify.php on line 19
